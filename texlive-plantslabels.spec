@@ -1,3 +1,9 @@
+# revision 17831
+# category Package
+# catalog-ctan /macros/latex/contrib/plantslabels
+# catalog-date 2010-04-14 18:13:33 +0200
+# catalog-license lppl
+# catalog-version 1.0
 Name:		texlive-plantslabels
 Version:	1.0
 Release:	1
@@ -45,6 +51,7 @@ and seven optional argument. The package uses the labels.
 %doc %{_texmfdistdir}/doc/latex/plantslabels/example/pdf/example.pdf
 %doc %{_texmfdistdir}/doc/latex/plantslabels/example/tex/cactus.eps
 %doc %{_texmfdistdir}/doc/latex/plantslabels/example/tex/example.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +62,5 @@ and seven optional argument. The package uses the labels.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
