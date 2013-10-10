@@ -1,12 +1,12 @@
-# revision 17831
+# revision 29803
 # category Package
 # catalog-ctan /macros/latex/contrib/plantslabels
-# catalog-date 2010-04-14 18:13:33 +0200
+# catalog-date 2012-06-08 17:19:18 +0200
 # catalog-license lppl
 # catalog-version 1.0
 Name:		texlive-plantslabels
 Version:	1.0
-Release:	2
+Release:	3
 Summary:	Write labels for plants
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/plantslabels
@@ -52,17 +52,3 @@ and seven optional argument. The package uses the labels.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
-+ Revision: 754976
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
-+ Revision: 719272
-- texlive-plantslabels
-- texlive-plantslabels
-- texlive-plantslabels
-- texlive-plantslabels
-
