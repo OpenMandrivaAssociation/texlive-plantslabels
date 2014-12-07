@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-plantslabels
 Version:	1.0
-Release:	9
+Release:	10
 Summary:	Write labels for plants
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/plantslabels
