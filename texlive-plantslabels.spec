@@ -1,18 +1,12 @@
-# revision 29803
-# category Package
-# catalog-ctan /macros/latex/contrib/plantslabels
-# catalog-date 2012-06-08 17:19:18 +0200
-# catalog-license lppl
-# catalog-version 1.0
 Name:		texlive-plantslabels
-Version:	1.0
-Release:	12
+Version:	29803
+Release:	1
 Summary:	Write labels for plants
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/plantslabels
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/plantslabels.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/plantslabels.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/plantslabels.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/plantslabels.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ The package defines a command \plant, which has three mandatory
 and seven optional argument. The package uses the labels.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,7 +39,7 @@ and seven optional argument. The package uses the labels.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
