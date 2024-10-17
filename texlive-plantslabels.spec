@@ -3,7 +3,7 @@ Version:	29803
 Release:	2
 Summary:	Write labels for plants
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/plantslabels
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/plantslabels
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/plantslabels.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/plantslabels.doc.r%{version}.tar.xz
